@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- html tag helps the browser to recognize the file type -->
+
+<!-- meta tag is used to select different charset//encoder depending upon language to prevent Mojibake || description of the website//content || author || viewport etc.  -->
+
+<!-- check unicode-table.com -->
+
+<!-- standard encoder used is Utf-8 -->
+
+<!-- Different documentations that can be used as a reference to study tags - mdn, w3schools, devdocs.io -->
+<meta charset="UTF-8">
+<meta keyword="author" content="Farhad Juneja, The Doctor">
+<meta keyword="description" content="This is my personal playbook for learning web development">
+
+<center>
+  <!-- This is a code playbook compiled with all the useful tags along the way to learn web development -->
+  
+<h1>This is level 1 of heading tag</h1>
+<h2>Heading tag has over six levels. This is how level 2 looks like</h2>
+<h3>and Level 3</h3>
+<h4>and Level 4</h4>
+<h5>and Level 5</h5>
+<h6>Finally level 6</h6>
+
+<!-- <hr> tag is used to create a horizontal line along the length of the webpage // a self closing tag -->
+
+<hr size="3" noshade>
+
+<!-- further on there is a tag for breaking a line // a self closing tag -->
+This is how a line is <br> broken. The tag used can be seen in the source code.
+
+<!-- and to center the content of the website simply use center tag -->
+</center>
+
+<!-- Index.html is usually considered homepage. '!' and enter, used in VS code to bring html boiler plate through emmet extension -->
+
+<!-- italisize the texts using i tag making a physical statement or emphasis em tag making a logical statement -->
+<i>This is a italisized text</i><br>
+<em>This is a italisized text</em><br>
+
+<!-- make text bold by b tag making a physical statement or strong tag making a logical statement -->
+<b>This is a bold text</b><br>
+<strong>This is a bold text</strong><br>
+
+<!-- to make a list in HTML we can use ul tag that is unordered list and li as sub tag, bullets -->
+
+Example of list : <br>
+<ul>Fruits
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Mango</li>
+</ul>
+<ul>Vegetables
+  <li>Potato</li>
+  <li>Tomato</li>
+  <li>Spinach</li>
+</ul>
+
+<!-- for making a list in order we use ol tag and li sub tag, numbers -->
+
+<ol>Fruits
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Mango</li>
+</ol>
+
+<!-- to start the list from a specific number use attribute start="x" -->
+
+<ol start="3">Fruits
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Mango</li>
+</ol>
+
+<!-- To get the roman numerical use attribute type="i" -->
+
+<ol type="i">Fruits
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Mango</li>
+</ol>
+
+<!-- sometimes a description list is made using the dl tag. under dl tag, dt tag is used to mention the product and dd tag used to describe the product -->
+
+<h3>Description list</h3>
+<dl>
+  <dt>Apple
+    <dd>A fruit, a company, a sin</dd>
+  </dt>
+  <dt>Pineapple
+    <dd>A fruit, a weapon, a joke</dd>
+  </dt>      
+</dl>
+
+<!-- to add a image to your webpage we use a img tag with attribute src signifying source -->
+
+<!-- another attribute that is used with img tag is alt attribute which helps to name the image if the browser is unable to load the image -->
+
+<!-- alt attribute also helps in SEO -->
+
+<p>
+  <img src="https://cdn.mos.cms.futurecdn.net/S62tKo2WjJ8NfU4bPX9GvU-970-80.jpg" alt="Hamster" width="100" height="90"></p>
+
+<!--before getting into hyperlinks and linking one text file to another search for wikigame -->
+
+<!-- a href tag is used to link sites. href being hypertext reference -->
+
+<a href="www.google.com">Google</a><br>
+
+<!-- table tag is used to organise the data in rows and columns, sub tags tr being table row and td being table data -->
+
+<table>
+  <tr>
+    <td>Johnny</td>
+    <td>Doe</td>
+    <td>is</td>
+    <td>innocent</td>
+  </tr>
+  
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+    <td>is</td>
+    <td>innocent</td>
+  </tr>
+</table>
+<br><br>
+
+<!-- tables also have head, body, and footer usinf sub tags thead, tbody, tfoot -->
+
+<!-- remember tr subtag comes first then depending upon the subtag used th or td subtags are used -->
+
+<!-- other attributes used with table tag are bgcolor, border, cellpadding, cellspacing, frame, align - but are deprecated -->
+
+<!-- styling should be left for CSS, use html for structuring only -->
+
+<table border="100" align="center" frame="box">
+  <thead>
+    <tr>
+      <th>Hello,</th>
+      <th>This is a</th>
+      <th>table header</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>Hi,</td>
+      <td>amigo</td>
+      <td>and i am table body</td>
+    </tr>
+  </tbody>
+ 
+   <tfoot>
+    <tr>
+      <td>Hi,</td>
+      <td>me</td>
+      <td>and this am table footer</td>
+    </tr>
+  </tfoot>
+  
+</table>
+
+<!-- Under this comment is an example of nested table -->
+<h3>Skills</h3>
+    <table border="3" frame="box">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>Creativity</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Determination</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                </table>
+
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Adobe Photoshop</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>        
+                    <tr>
+                        <td>Video Editing</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+<br><br>
+<!-- Further on we will try to understand form tag which includes sub tags such as label, input for each label -->
+
+<!-- form action attribute directs the website what to be done after the user clicks on the submit button. It helps the user to direct towards a specific section of your website -->
+
+<!-- input is a self closing sub tag -->
+
+<!-- Different attributes for input sub tag includes text, color, checkbox, password, submit, email, range, url, image, date, tel, time, radio, month, file, button -->
+
+<form>
+  <label for="Fname">First name</label>
+  <input type="text"><br>
+  <label for="Lname">Last name</label>
+  <input type="text"><br>
+  <label for="msg">Message :</label>
+  <textarea name="msg" id="" cols="30" rows="10"></textarea><br>
+  <label for="Pass">Password</label>
+  <input type="password"><br>
+  <label for="Ques">Do you want to sign up for email listing?</label>
+  <input type="checkbox"><br><br>
+  <input type="submit">
+</form>
+
+<!-- within the form tag we can use another tag called text area as seen in suggestions section wjere a user can type in long message for the website -->
+
+<!-- mailto:xyz@gmail.com attribute in form tag helps the user to send the message to the email specified in the attribute ->
+</body>
+</html>
